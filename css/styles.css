@@ -486,6 +486,6 @@ button:focus,
 	animation-duration: 1s;
 	animation-name: flicker;
 	animation-iteration-count: infinite;
-	animation-direction: linear;
+	animation-direction: normal;
 	animation-timing-function: steps(2, start);
 }
