@@ -64,3 +64,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+.firebaserc
+firebase.json
+.github/workflows/firebase-hosting-pull-request.yml
+.firebaserc
