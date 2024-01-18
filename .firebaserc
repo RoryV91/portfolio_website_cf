@@ -1,8 +1,5 @@
 {
   "projects": {
-    "alias1": "roryv-portfolio-site",
-    "default": "roryv-portfolio-site"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "portfolio-3c3e0"
+  }
 }

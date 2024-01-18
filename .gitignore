@@ -68,3 +68,5 @@ node_modules/
 firebase.json
 .github/workflows/firebase-hosting-pull-request.yml
 .firebaserc
+.firebaserc
+public/404.html
