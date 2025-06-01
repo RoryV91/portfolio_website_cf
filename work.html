@@ -28,35 +28,34 @@
 
 	<body>
 		<header class="page-header">
-			<a href="index.html">
-				<img src="img/class_icon.svg"
-					alt="Logo (directs to home page)"
-					class="page-header__item"
-					id="page-header__icon" />
-			</a>
-			<nav class="main-navigation page-header__item">
+			<nav class="main-navigation page-header__item"
+				aria-label="Main navigation">
 				<ul role="menubar"
-					class="navigation-list">
-					<li role="presentation">
+					class="navigation-list"
+					aria-label="Main menu">
+					<li role="none">
 						<a href="index.html"
 							role="menuitem"
-							class="navigation-list__item default__link navigation-list__item--active">Home</a>
+							class="navigation-list__item default__link"
+							aria-current="false">Home</a>
 					</li>
-					<li role="presentation">
+					<li role="none">
 						<a href="about.html"
 							role="menuitem"
-							class="navigation-list__item default__link">About Me</a>
+							class="navigation-list__item default__link"
+							aria-current="false">About Me</a>
 					</li>
-					<li role="presentation">
+					<li role="none">
 						<a href="contact.html"
 							role="menuitem"
-							class="navigation-list__item default__link">Contact</a>
+							class="navigation-list__item default__link"
+							aria-current="false">Contact</a>
 					</li>
-					<li role="presentation">
+					<li role="none">
 						<a href="work.html"
 							role="menuitem"
-							class="navigation-list__item default__link">Work
-						</a>
+							class="navigation-list__item default__link navigation-list__item--active"
+							aria-current="page">Work</a>
 					</li>
 				</ul>
 			</nav>
@@ -69,10 +68,11 @@
 						<h2>Pokédex App</h2>
 					</div>
 					<img class="thumbnail"
-						src="https://placehold.co/120"
+						src="./img/pokedex.png"
 						alt="Thumbnail image for project">
 					<p class="description">
-						This project is a frontend using data from the PokéAPI. It was made suing HTML, CSS, and plain javaScript. 
+						This project is a frontend using data from the PokéAPI. It was made using HTML, CSS, and plain
+						JavaScript.
 					</p>
 					<a href="https://roryv91.github.io/Pokedex-App/"
 						class="default__link">Demo</a>
@@ -87,7 +87,8 @@
 						src="https://placehold.co/120"
 						alt="Thumbnail image for project">
 					<p class="description">
-						This project is a React client for the myFlixAPI Node.js backend. The entire project is MERN stack as it uses MongoDB.
+						This project is a React client for the myFlixAPI Node.js backend. The entire project is MERN
+						stack as it uses MongoDB.
 					</p>
 					<a href="#"
 						class="default__link">Demo</a>
@@ -96,15 +97,14 @@
 				</div>
 				<div class="project-list__item">
 					<div class="project-list__item__title">
-						<h2>Mobile web app</h2>
+						<h2>Major</h2>
 					</div>
 					<img class="thumbnail"
 						src="https://placehold.co/120"
 						alt="Thumbnail image for project">
 					<p class="description">
-						Within this project, I was responsible for the frontend. It’s
-						written in React.js. Additionally, I've created the HTML and CSS
-						templates.
+						Major is a bug tracker application build on the MERN stack. It uses permissions to allow users to
+						create, edit, and delete bugs.
 					</p>
 					<a href="#"
 						class="default__link">Demo</a>
@@ -113,15 +113,13 @@
 				</div>
 				<div class="project-list__item">
 					<div class="project-list__item__title">
-						<h2>Mobile web app</h2>
+						<h2>Chat App</h2>
 					</div>
 					<img class="thumbnail"
 						src="https://placehold.co/120"
 						alt="Thumbnail image for project">
 					<p class="description">
-						Within this project, I was responsible for the frontend. It’s
-						written in React.js. Additionally, I've created the HTML and CSS
-						templates.
+						Chat App is a real-time chat application built in React Native. It uses Firebase, Firestore, Expo, and Gifted Chat.
 					</p>
 					<a href="#"
 						class="default__link">Demo</a>
@@ -130,15 +128,13 @@
 				</div>
 				<div class="project-list__item">
 					<div class="project-list__item__title">
-						<h2>Mobile web app</h2>
+						<h2>Nade Jump</h2>
 					</div>
 					<img class="thumbnail"
 						src="https://placehold.co/120"
 						alt="Thumbnail image for project">
 					<p class="description">
-						Within this project, I was responsible for the frontend. It’s
-						written in React.js. Additionally, I've created the HTML and CSS
-						templates.
+						This is a fan-site for the hit game Halo CE. It is built using Express and Node.js as a backend with EJS in the frontend. 
 					</p>
 					<a href="#"
 						class="default__link">Demo</a>
@@ -147,7 +143,7 @@
 				</div>
 				<div class="project-list__item">
 					<div class="project-list__item__title">
-						<h2>Mobile web app</h2>
+						<h2>meetup</h2>
 					</div>
 					<img class="thumbnail"
 						src="https://placehold.co/120"
@@ -165,22 +161,35 @@
 			</section>
 		</section>
 		<footer class="page-footer">
-			<p class="small_text">Find me on:</p>
-			<div class="social-media">
+			<h2 class="small_text">Find me on:</h2>
+			<div class="social-media"
+				role="list">
 				<a href="https://github.com/RoryV91"
-					class="social-media__item">
+					class="social-media__item"
+					role="listitem"
+					aria-label="Visit my GitHub profile">
 					<img src="img/github_icon.svg"
-						alt="GitHub" />
+						alt=""
+						width="30"
+						height="30" />
 				</a>
 				<a href="https://twitter.com/R0ry_V"
-					class="social-media__item">
+					class="social-media__item"
+					role="listitem"
+					aria-label="Visit my Twitter profile">
 					<img src="img/twitter_icon.svg"
-						alt="Twitter" />
+						alt=""
+						width="30"
+						height="30" />
 				</a>
 				<a href="https://www.linkedin.com/in/rory-van-blaricom/"
-					class="social-media__item">
+					class="social-media__item"
+					role="listitem"
+					aria-label="Visit my LinkedIn profile">
 					<img src="img/linkedin_icon.svg"
-						alt="LinkedIn" />
+						alt=""
+						width="30"
+						height="30" />
 				</a>
 			</div>
 		</footer>

@@ -157,6 +157,11 @@ button:focus,
 	color: var(--primary-color);
 }
 
+.navigation-list {
+	display: flex;
+
+}
+
 .navigation-list__item--active {
 	text-decoration: none;
 }
@@ -167,6 +172,15 @@ button:focus,
 	margin-right: 40px;
 	border-radius: 50%;
 	border: 10px solid var(--tertiary-color);
+}
+
+.thumbnail {
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	object-fit: cover;
+	margin: 10px auto;
+	display: block;
 }
 
 .interests {
@@ -269,6 +283,11 @@ button:focus,
 
 .navigation-list {
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 @supports (display: grid) {
@@ -331,6 +350,7 @@ button:focus,
 	.button_group {
 		margin-bottom: 10px;
 	}
+
 }
 
 @media all and (max-width: 500px) {
@@ -338,6 +358,29 @@ button:focus,
 		margin: 0 20px;
 		grid-template-columns: 1fr;
 	}
+
+	.page-header {
+		padding: 10px;
+		position: relative;
+	}
+
+	.navigation-list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.navigation-list li {
+		margin: 5px 0;
+		width: 100%;
+		text-align: left;
+	}
+
+	.page-header__item:last-child {
+		text-align: left;
+	}
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -361,7 +404,16 @@ button:focus,
 		font-size: 22px;
 	}
 
+	#svg2 {
+		width: 100vw;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
 
+	.experience {
+		width: 95%;
+	}
 }
 
 @keyframes flicker {
